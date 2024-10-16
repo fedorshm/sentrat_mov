@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['sentratmov-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://sentratmov-production.up.railway.app']
+   
 
 # Application definition
 
