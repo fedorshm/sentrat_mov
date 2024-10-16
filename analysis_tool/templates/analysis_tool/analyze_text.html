@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Классификация отзывов</title>
+    <title>Text Analysis</title>
 </head>
 <body>
-    <h1>Анализ отзывов к фильмам на английском языка</h1>
-    <p>Этот сервис принимает отзыв к фильму на английском языке и предсказывает его сентимент и рейтинг, который был дан фильму согласно отзыву</p>
-    <p>В поле ниже введите отзыв к фильму на английском языке и нажмите кнопку "Классифицировать"</p>
-     <p>Обычно обработка запроса занимает около 10-30 секунд</p>
+    <h1>Text Analysis</h1>
     <form method="post">
         {% csrf_token %}
-        <textarea name="text" rows="4" cols="50" placeholder="Введите текст отзыва"></textarea><br><br>
-        <input type="submit" value="Классифицировать">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text for analysis"></textarea><br><br>
+        <input type="submit" value="Analyze">
     </form>
 </body>
 </html>
