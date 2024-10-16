@@ -2,3 +2,5 @@
 
 Код обучения моделей для классификации и их оценки представлен в блокноте **project_code.ipynb**
 Код запускался в сервисе Kaggle.
+
+Ссылка на сервис в Railway для тестирования: https://sentratmov-production.up.railway.app/analysis/analyze/
