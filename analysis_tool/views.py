@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import JsonResponse
 from transformers import pipeline
 
 sentiment_model = pipeline("text-classification", model="Gnider/roberta_dist_sent", truncation=True, max_length=512)
@@ -8,9 +7,6 @@ rating_model = pipeline("text-classification", model="Gnider/roberta_dist_rat", 
 def analyze_text(request):
     if request.method == 'POST':
         text = request.POST.get('text', '')
-
-        if len(text) > 512:
-            text = text[:512]
 
         sentiment_results = sentiment_model(text, return_all_scores=True)[0]
         label_to_sentiment = {'LABEL_0': 'negative', 'LABEL_1': 'positive'}
