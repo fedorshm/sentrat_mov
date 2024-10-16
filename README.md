@@ -4,4 +4,6 @@
 
 Код запускался в сервисе Kaggle.
 
-Ссылка на сервис в Railway для тестирования: https://sentratmov-production.up.railway.app/analysis/analyze/
+Сервис оформлен в Django и развернут в Railway.
+
+Ссылка на сервис для тестирования: https://sentratmov-production.up.railway.app/analysis/analyze/
